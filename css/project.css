@@ -457,3 +457,13 @@ header.channel-header-double p {
 .feature div.case-yours a:hover {color: #07adea; text-decoration: none;}
 .feature div.case-yours a:active {color: #666; text-decoration: none;}
 .feature div.case-yours a:focus {outline: none;}
+
+.dropdown-menu {
+	min-width: 100px;
+}
+.dropdown-menu a {
+	text-decoration: none;
+}
+.sr-nav .nav > li > a:focus, .sr-nav .nav > li > a:hover {
+	color: #07adea;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="keywords" content="大数据, 数人科技, 北京数人科技有限公司, 北京数人, Dataman">
+<meta name="description" content="数人科技专注于实现云时代的分布式操作系统，帮助企业开启云的力量。数人云是国内第一款基于Mesos的企业级云操作系统，可以为企业提供目前最成熟的Docker生产环境。让容器技术在生产环境落地。">
+<meta name="author" content="王璞, 肖德时, 谢乐冰">
+<title>数人云 - 云时代的操作系统 数人科技</title>
+<link rel="shortcut icon" type="image/x-icon" href="ico/favicon.ico" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/project.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/project.js"></script>
+<style>
+body {
+	background-color: #EEE;
+}
+.btn.btn-freetry {
+	display: block;
+	height: 75px;
+	margin: 10px auto;
+	width: 440px;
+	background-color: #62be50;
+	border-radius: 6px;
+    padding-top: 25px!important;
+    font-size: 18px;
+}
+.box-btn-freetry {
+	margin: 100px 0 40px 0;
+}
+header.main-header {
+	position: relative;
+	text-align: center;
+}
+header.main-header nav {
+	position: relative;
+	right: auto;
+}
+footer.main-footer:before {
+	background: url(pics/footer-bottom.png) no-repeat 0 -10px;
+	content:"";
+	height: 100px;
+	left: 0;
+	position: absolute;
+	top: -100px;
+	width: 100%;
+}
+footer.main-footer {
+	background-color: #FFF;
+	margin-top: 100px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+	position: relative;
+}
+.main-header .navbar-nav > li > a {
+	color: #FFF;
+}
+.main-header .navbar-nav > li > a:hover, .main-header .navbar-nav > li > a:active, .main-header .navbar-nav > li > a:focus {
+	background: none;
+	color: #EEE;
+}
+.main-header .nav .open > a, .main-header .nav .open > a:focus, .main-header .nav .open > a:hover {
+	background: none;
+	color: #EEE;
+}
+.dropdown-menu {
+	min-width: 80px;
+}
+.main-header .dropdown-menu > li > a {
+	margin-left: 0;
+	text-align: center;
+}
+
+
+#case-miaosha header.main-header {
+	background: url(pics/case-miaosha-header-bg.jpg) no-repeat top;
+	background-size: cover;
+	color: #FFF;
+	height: 100%;
+	margin-bottom: 0px;
+	min-height: 600px;
+}
+#case-miaosha .case-miaosha-01 {
+	background: url(pics/case-miaosha-01.gif) no-repeat;
+	background-size: cover;
+	height: 650px;
+}
+#case-miaosha .case-miaosha-02 {
+	background: url(pics/case-miaosha-02.gif) no-repeat;
+	background-size: cover;
+	height: 650px;
+}
+#case-miaosha .case-miaosha-03 {
+	background: url(pics/case-miaosha-03.gif) no-repeat;
+	background-size: cover;
+	height: 650px;
+}
+#case-miaosha .case-miaosha-04 {
+	background: url(pics/case-miaosha-04.gif) no-repeat;
+	background-size: cover;
+	height: 650px;
+}
+#case-miaosha .btn-success {
+	background-color: #62be50;
+	border-radius: 6px;
+	border: 0;
+	padding: 10px 20px;
+}
+
+#case-miaosha .main-header {
+    text-align: left;
+}
+#case-miaosha .main-header .row {
+    margin-top: 12%;
+}
+#case-miaosha .main-header .row img {
+    margin-bottom: 20px;
+}
+#case-miaosha .main-header .row h1 {
+    font-size: 45px;
+    margin: 0 0 20px 0;
+}
+#case-miaosha .main-header .row a {
+    margin-top: 30px;
+	margin-right: 20px;
+    height: 54px; 
+    min-width: 150px; 
+    line-height: 54px; 
+    border-radius: 27px; 
+    font-size: 18px; 
+    color: #FFF; 
+    background: #aac404; 
+    display: inline-block; 
+    text-align: center;
+    cursor: pointer;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#case-miaosha .main-header .row a:hover {
+    text-decoration: none;
+	background-color: #b7d307;
+	color: #333;
+}
+</style>
+</head>
+
+<body id="case-miaosha">
+<header class="main-header">
+	<div class="container">
+		<nav class="navbar">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="http://www.shurenyun.com"><img src="pics/shurenyun-logo.svg" height="30"></a>
+			</div>
+		
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse">
+			  <ul class="nav navbar-nav navbar-right">
+			  	<li><a href="../companyapp/companyapp-index.html">企业应用</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">案例 <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+					<li><a href="#">秒杀</a></li>
+					<li><a href="../case.html">更多案例</a></li>
+				  </ul>
+				</li>
+				<li><a href="http://www.shurenyun.com/price.html">价格</a></li>
+				<li><a href="http://blog.dataman-inc.com" target="_blank">博客</a></li>
+				<li><a href="http://open.shurenyun.com" target="_blank">社区</a></li>
+				<li><a href="http://www.dataman-inc.com" target="_blank">公司</a></li>
+				<li><a href="http://doc.shurenyun.com" target="_blank">文档</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<div class="row">
+			<div class="col-md-7">
+				<img src="pics/miaosha-pic-02.png" class="img-responsive">
+			</div>
+			<div class="col-md-5">
+				<img src="pics/miaosha-pic-01.png">
+				<h1>Hold住百万秒杀！</h1>
+				<img src="pics/miaosha-pic-03.png">
+				<div>
+					<a href="http://shurenyun.mikecrm.com/f.php?t=7UrsBM" id="case-miaosha-top" target="_blank">立即试用</a>
+					<a href="http://shurenyun.mikecrm.com/f.php?t=7yiQ9X " target="_blank" style=" font-size: 14px; "><span class="glyphicon glyphicon-download-alt"></span> 下载秒杀技术白皮书</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="case-miaosha-01"></div>
+<div class="case-miaosha-02"></div>
+<div class="case-miaosha-03"></div>
+<div class="case-miaosha-04"></div>
+<div class="box-btn-freetry">
+	<a class="btn btn-success btn-freetry" href="http://shurenyun.mikecrm.com/f.php?t=7UrsBM" id="case-miaosha-bottom" target="_blank">立即注册，免费体验试用版</a>
+	<p class="text-center">如有疑问，请拨打咨询电话：<strong>010-64776698</strong></p>
+</div>
+<footer class="main-footer">
+	<div class="container">
+		<div>
+			<div class="footer-partner">
+				<h5>云计算合作伙伴</h5>
+				<img src="pics/logo-ucloud.png" height="30"><img src="pics/logo-qcloud.png" height="30"><img src="pics/logo-aliyun.png" height="30"><img src="pics/logo-shouduzaixian.png" height="30"><img src="pics/logo-ms.png" height="30"></div>
+			<div class="footer-text">
+				<p> <a href="http://blog.dataman-inc.com" target="_blank">博客</a> - <a href="http://open.shurenyun.com" target="_blank">社区</a> - <a href="http://www.dataman-inc.com" target="_blank">公司</a> - <a href="http://doc.shurenyun.com" target="_blank">文档</a> - <a href="#" data-toggle="modal" data-target="#myModal">服务条款</a> <br>
+					Copyright©2015 北京数人科技有限公司（dataman-inc.com） 京ICP备14058899号-4 版本号：V0.1.1112<br>
+					+86 10 64776698 info@dataman-inc.com 北京市朝阳区大望京商务园区宏泰东街浦项中心A座806-807 100102 </p>
+			</div>
+			<div style=" text-align: center;">
+				<div class="footer-logo"> <img src="pics/dataman-logo.png" alt="" height="54"> </div>
+				<div class="qr-weixin"> <img src="pics/qr-winxin.png" alt="" height="54"><br>
+					关注微信 </div>
+				<div class="qr-weixin"> <a href="http://weibo.com/p/1006065558261798/home?from=page_100606&mod=TAB#place" title="关注微博" target="_blank"><img src="pics/qr-weibo.png" alt="" height="54"></a><br>
+					关注微博 </div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?64b446a7f17856a69b50d20ca42de802";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
