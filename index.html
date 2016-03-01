@@ -1,292 +1,551 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="大数据, 数人科技, 北京数人科技有限公司, 北京数人, Dataman">
-    <meta name="description" content="数人科技专注于实现云时代的分布式操作系统，帮助企业开启云的力量。数人云是国内第一款基于Mesos的企业级云操作系统，可以为企业提供目前最成熟的Docker生产环境。让容器技术在生产环境落地。">
-    <meta name="author" content="王璞, 肖德时, 谢乐冰">
-    <title>数人科技 - 打造云时代的操作系统 数人云</title>
-    <link href="images/favicon.ico" rel="shortcut icon">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/project.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="数人云是基于Mesos和Docker技术的下一代DCOS（数据中心操作系统）。领先的轻量级PaaS平台。可部署在公有云或者私有云（IDC）之上，帮助用户在云端快速建立并稳定运维高性能生产环境。实现秒级扩容，一键部署，混跑多种应用的能力。">
+	<meta name="keywords" content="数人云、数人科技、DCOS、下一代DCOS、数据中心操作系统、云操作系统">
+	<title>数人云 ･ 下一代DCOS 数据中心操作系统</title>
+	<link href="css-shurenyun/bootstrap.min.css" rel="stylesheet">
+	<link href="font-awesome-4.5.0-shurenyun/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css-shurenyun/shurenyun.css" rel="stylesheet">
 </head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top nav-main nav-scroll">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="https://www.shurenyun.com/"><img src="pics-shurenyun/logo-shurenyun-ico.svg" height="100%"></a>
+			</div>
 
-<body class="sr-index">
-    <nav class="navbar navbar-fixed-top sr-nav">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sr-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a class="navbar-brand" href="http://www.dataman-inc.com/"><img src="images/logo.svg" height="20"></a>
-            </div>
-            <div class="collapse navbar-collapse" id="sr-navbar-collapse">
-                <form class="navbar-form navbar-right">
-                    <a onclick="_hmt.push(['_trackEvent', 'trial', 'click', 'casetop']);" href="http://www.shurenyun.com" class="btn btn-sm" target="_blank" id="index-omega-free-trial-case-top">免费试用</a>
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">首 页</a></li>
-                    <li><a href="product.html">产 品</a></li>
-					<li><a href="companyapp/companyapp-index.html">企业应用</a></li>
+			<div class="collapse navbar-collapse">
+				<form class="navbar-form navbar-right" role="search">
+					<a href="https://www.shurenyun.com/user/register"><button type="button" class="btn btn-default">注册</button></a>
+					<a href="https://www.shurenyun.com/user/login"><button type="button" class="btn btn-default login">登录</button></a>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="https://www.shurenyun.com/product">产品 <span class="sr-only">(current)</span></a></li>
 					<li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">方案 & 案例 <span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-						<li><a href="case/case-miaosha.html">秒杀</a></li>
-						<li><a href="case.html">更多案例</a></li>
-					  </ul>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">解决方案 <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-6">
+										<h2>场景</h2>
+										<div>
+											<a href="https://www.shurenyun.com/scene-seckill">高并发 / 秒杀</a>
+											<a href="https://www.shurenyun.com/scene-containercloud">容器云</a>
+											<a href="https://www.shurenyun.com/scene-cicd">CI / CD</a>
+											<a href="https://www.shurenyun.com/scene-bigdata">大数据</a>
+											<a href="https://www.shurenyun.com/scene-companyapp/index">企业应用平台</a>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<h2>行业</h2>
+										<div>
+											<a href="https://www.shurenyun.com/solution-finance">金融</a>
+											<a href="https://www.shurenyun.com/solution-internet">互联网</a>
+											<a href="https://www.shurenyun.com/solution-bioinfo">生物信息</a>
+											<a href="https://www.shurenyun.com/solution-o2o">电商</a>
+											<a href="https://www.shurenyun.com/solution-operator">运营商</a>
+											<a href="https://www.shurenyun.com/solution-tradition">能源</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</ul>
 					</li>
-                    <li><a href="contact.html">公 司</a></li>
-                    <li><a href="http://blog.dataman-inc.com/" target="_blank" class="navbar-link-color">博 客</a></li>
-                    <li><a href="http://support.dataman-inc.com/request/guest/" target="_blank" class="navbar-link-color">反 馈</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-5"><img src="images/shurenyun.png" class="img-responsive"></div>
-			<div class="col-md-1"></div>
-			<div class="col-md-6">
-				<h1><span>数人云</span> 云时代的操作系统<br>—— 基于Mesos最成熟企业级容器云</h1>
-				<h2>1) 满足业务爆发增长需求，保障业务应用永不掉线<br>2) 像用一台电脑一样统一管理整个集群<br>3) 一键部署任何容器、分布式应用&nbsp;&nbsp;&nbsp; <a href="product.html">了解更多</a> 
-				</h2>
-				<a onclick="_hmt.push(['_trackEvent', 'trial', 'click', 'indexbanner']);" href="http://www.shurenyun.com" class="btn btn-success" id="index-omega-free-trial-index-banner" target="_blank">免费试用 >> </a>
+					<li>
+						<a href="https://www.shurenyun.com/price">价格</a>
+
+					</li>
+					<li><a href="http://doc.shurenyun.com/">文档</a></li>
+					<li><a href="http://blog.dataman-inc.com/">博客</a></li>
+					<li><a href="http://open.shurenyun.com/">社区</a></li>
+					<li><a href="https://www.shurenyun.com/aboutus">关于</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div id="index">
+		<header class="header-index">
+			<h1>数人云 ･ 下一代 DCOS</h1>
+			<h2>将应用弹性做到极致</h2>
+			<h3>The Ultimate Application Flexibility</h3>
+			<form>
+				<a class="btn btn-primary" href="https://www.shurenyun.com/user/register">免费注册</a>
+				<a class="btn btn-default" href="https://www.shurenyun.com/user/login">立即登录</a>
+			</form>
+			<footer><i class="fa fa-angle-down"></i></footer>
+		</header>
+		<section class="product-feature">
+			<div class="container">
+				<ul class="row">
+					<li class="col-md-4">
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" src="pics-shurenyun/ico-feature-01.svg" width="100%">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">一键伸缩</h4>
+								<p class="media-content">秒级扩展1000个容器实例轻松应对高并发</p>
+							</div>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" src="pics-shurenyun/ico-feature-02.svg" width="100%">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">资源池化</h4>
+								<p class="media-content">将Docker化容器应用与 Spark 等大数据应用混跑在同一集群提高资源利用率</p>
+							</div>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" src="pics-shurenyun/ico-feature-03.svg" width="100%">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">混合云管理</h4>
+								<p class="media-content">支持公有云，私有云，混合云支持物理机，虚拟机</p>
+							</div>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" src="pics-shurenyun/ico-feature-04.svg" width="100%">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">一键部署</h4>
+								<p class="media-content">一键部署 Docker 容器化应用，及 Spark、Hadoop 等分布式应用</p>
+							</div>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" src="pics-shurenyun/ico-feature-05.svg" width="100%">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">简化运维</h4>
+								<p class="media-content">统一监控各种应用和集群资源使用情况，简化运维管理</p>
+							</div>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div class="media">
+							<div class="media-left">
+								<img class="media-object" src="pics-shurenyun/ico-feature-06.svg" width="100%">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">保障高可用</h4>
+								<p class="media-content">自动迁移故障服务器上的应用实例，保障服务高可用</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="text-center">
+					<a href="https://www.shurenyun.com/product" class="btn btn-primary">了解详情 <i class="fa fa-arrow-circle-o-right"></i>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="resolve-question">
+			<h1>数人云能解决哪些问题?</h1>
+		</section>
+		<section class="index-carousel">
+			<div class="container">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active">高并发</li>
+						<li data-target="#carousel-example-generic" data-slide-to="1">容器云</li>
+						<li data-target="#carousel-example-generic" data-slide-to="2">持续集成</li>
+						<li data-target="#carousel-example-generic" data-slide-to="3">大数据平台</li>
+						<li data-target="#carousel-example-generic" data-slide-to="4">企业应用平台</li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<div class="carousel-caption">
+								<div class="row">
+									<div class="col-md-5 col-md-offset-1"><img src="pics-shurenyun/pic-carousel-01.svg" width="100%"></div>
+									<div class="col-md-4 col-md-offset-1">
+										<h1>一秒扩容 - 应对高并发<br>
+											10倍流量体验依然顺畅
+										</h1>
+										<p>根据客户业务需求，<br>
+											秒级动态伸缩业务应用实例个数，<br>
+											保障业务应用的高性能。<br>
+											<a href="https://www.shurenyun.com/scene-seckill">了解详情 ></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-caption">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-1">
+										<h1>大规模 Docker 生产环境</h1>
+										<p>微服务架构是云时代的趋势。<br>
+											使用云操作系统可简化微服务应用的开发过程。<br>
+											快速搭建容器云，统一管理数万个 Docker 实例<br>
+											<a href="https://www.shurenyun.com/scene-containercloud">了解详情 ></a>
+										</p>
+									</div>
+									<div class="col-md-4"><img src="pics-shurenyun/pic-carousel-04.png" width="100%"></div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-caption">
+								<div class="row">
+									<div class="col-md-4 col-md-offset-1"><img src="pics-shurenyun/pic-carousel-05.svg" width="100%"></div>
+									<div class="col-md-6 col-md-offset-1">
+										<h1>持续集成环境 - 加快产品迭代</h1>
+										<p>产品迭代速度已成为互联网公司成败的关键因素。<br>
+											使用数人云操作系统可迅速搭建Jenkins持续集成环境，<br>
+											从而保障产品实现快速迭代。<br>
+											<a href="https://www.shurenyun.com/scene-cicd">了解详情 ></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-caption">
+								<div class="row">
+									<div class="col-md-4 col-md-offset-1"><img src="pics-shurenyun/pic-carousel-03.svg" width="100%"></div>
+									<div class="col-md-6 col-md-offset-1">
+										<h1>大数据处理平台</h1>
+										<p>用户需要更实时，更智能的应用。<br>
+											要满足这些需求，企业需要一个大数据处理平台做支撑。<br>
+											数人云可以快速搭建和管理流行的大数据处理框架。<br>
+											<a href="https://www.shurenyun.com/scene-bigdata">了解详情 ></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="carousel-caption">
+								<div class="row">
+									<div class="col-md-6 col-md-offset-1">
+										<h1>企业级应用平台 - 快速搭建生产环境</h1>
+										<p>一键部署上万种Docker容器化应用<br>
+											快速部署Hadoop，Spark，Cassandra,<br>
+											Jenkins, Kafka and MemSQL 等分布式应用。<br>
+											<a href="https://www.shurenyun.com/scene-companyapp/index">了解详情 ></a>
+										</p>
+									</div>
+									<div class="col-md-4 "><img src="pics-shurenyun/pic-carousel-02.png" width="100%"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="environment">
+			<div class="container">
+				<h1>多环境支持 & 无缝迁移</h1>
+				<hr>
+				<h2>数人云DCOS，可安装在公有云、私有云、混合云之上。支持物理机、虚拟机。<br>可在多平台间无缝迁移。帮助用户保持统一的开发运维体验。</h2>
+				<ul class="row">
+					<li class="col-md-4"><img src="pics-shurenyun/logo/logo-ucloud.png" class="logo"></li>
+					<li class="col-md-4"><img src="pics-shurenyun/logo/logo-aliyun.png" class="logo"></li>
+					<li class="col-md-4"><img src="pics-shurenyun/logo/logo-microsoft.png" class="logo"></li>
+					<li class="col-md-4"><img src="pics-shurenyun/logo/logo-tengxunyun.png" class="logo"></li>
+					<li class="col-md-4"><img src="pics-shurenyun/logo/logo-openstack.png" class="logo"></li>
+					<li class="col-md-4"><img src="pics-shurenyun/logo/logo-redhat.png" class="logo"></li>
+					<li class="col-md-4"><img src="pics-shurenyun/logo/logo-vmware.png" class="logo"></li>
+					<li class="col-md-4"><img src="pics-shurenyun/logo/logo-centos.png" class="logo"></li>
+					<li class="col-md-4"><img src="pics-shurenyun/logo/logo-ubuntu.png" class="logo"></li>
+				</ul>
+			</div>
+		</section>
+		<section class="tec-com">
+			<div class="container">
+				<h1>技术 & 组件</h1>
+				<hr>
+				<ul class="row">
+					<li class="col-md-4">
+						<div>
+							<img src="pics-shurenyun/ico/ico-mesos.svg" class="logo">
+							<h2>Mesos</h2>
+							<p>分布式操作系统内核，也是数人云 DCOS 的核心组件。将整个集群抽象为一个资源池，可像用一台电脑一样管理整个集群资源。</p>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div>
+							<img src="pics-shurenyun/ico/ico-docker.svg" class="logo">
+							<h2>Docker</h2>
+							<p>Docker 容器是数人云 DCOS 的核心组件。使用数人云可轻松发布和管理 Docker 容器化应用（包括 Docker Hub 及其他第三方平台上的 Docker 镜像）。</p>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div>
+							<img src="pics-shurenyun/ico/ico-marathon.svg" class="logo">
+							<h2>Marathon</h2>
+							<p>Mesos的框架之一，DCOS 重要组件。用于发布和管理长期运行的应用。如：web 应用，数据库，微服务应用等。</p>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div>
+							<img src="pics-shurenyun/ico/ico-chronos.svg" class="logo">
+							<h2>Chronos</h2>
+							<p>一个具备容错特性的作业调度器。用于创建和管理定时任务以及复杂的 ETL 流程。</p>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div>
+							<img src="pics-shurenyun/ico/ico-jenkins.svg" class="logo">
+							<h2>Jenkins</h2>
+							<p>开源的持续集成工具。可帮助企业快速获得持续集成能力，加快产品迭代。</p>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div>
+							<img src="pics-shurenyun/ico/ico-dashboard.svg" class="logo">
+							<h2>DCOS 仪表盘</h2>
+							<p>通过统一界面，管理应用和集群。可随时监控每一个应用，集群，主机的运行健康状态。</p>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div>
+							<img src="pics-shurenyun/ico/ico-log.svg" class="logo">
+							<h2>DCOS 日志管理</h2>
+							<p>统一收集应用和集群主机日志，能够快速查询和检索，帮助企业快速定位问题。</p>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div>
+							<img src="pics-shurenyun/ico/ico-api.svg" class="logo">
+							<h2>DCOS API</h2>
+							<p>提供 API 接口，可与多种第三方应用，或企业自有管理系统对接整合。 在 DCOS 上定制化扩展企业特有功能。</p>
+						</div>
+					</li>
+					<li class="col-md-4">
+						<div>
+							<img src="pics-shurenyun/ico/ico-companyapp.svg" class="logo">
+							<h2>企业应用平台</h2>
+							<p>一键部署常用的 Docker 容器化应用，以及 Spark，Hadoop，Kafka，Cassandra 等分布式应用。</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="experience">
+			<div class="container">
+				<h1>DCOS 和 Mesos 成功经验</h1>
+				<hr>
+				<ul class="row">
+					<li class="col-md-2">
+						<a href="#">
+							<em>去哪儿</em>
+							<img src="pics-shurenyun/logo/logo-qunar.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>Kuick</em>
+							<img src="pics-shurenyun/logo/logo-kuick.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>普惠金融</em>
+							<img src="pics-shurenyun/logo/logo-puhui.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>微旋基因</em>
+							<img src="pics-shurenyun/logo/logo-weixuan.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>浙江移动</em>
+							<img src="pics-shurenyun/logo/logo-zhejiang.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>某电力</em>
+							<img src="pics-shurenyun/logo/logo-dianli.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>爱奇艺</em>
+							<img src="pics-shurenyun/logo/logo-iqiyi.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>苹果</em>
+							<img src="pics-shurenyun/logo/logo-apple.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>Hubspot</em>
+							<img src="pics-shurenyun/logo/logo-hubspot.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>Airbnb</em>
+							<img src="pics-shurenyun/logo/logo-airbnb.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>Twitter</em>
+							<img src="pics-shurenyun/logo/logo-twitter.jpg" class="logo">
+						</a>
+					</li>
+					<li class="col-md-2">
+						<a href="#">
+							<em>Verizon</em>
+							<img src="pics-shurenyun/logo/logo-verizon.jpg" class="logo">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+	<div class="footer-slogan">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-8"><h1>下一代 DCOS ･ 将应用弹性做到极致</h1></div>
+				<div class="col-md-3"><a href="https://www.shurenyun.com/user/register" class="btn btn-primary">免费注册 <i class="fa fa-arrow-circle-o-right"></i></a></div>
 			</div>
 		</div>
 	</div>
-</header>
+	<footer class="footer-main">
+		<div class="container">
+			<ul class="row footer-help">
+				<li class="col-md-3">
+					<i class="fa fa-question-circle"></i>
+					<h1>用户手册 & 帮助中心</h1>
+					<p>查阅文档、提交问题工单、搜索故障解决方案，都可以前往「帮助中心」。</p>
+					<em><a href="http://doc.shurenyun.com/">前往帮助中心 ></a></em>
+				</li>
+				<li class="col-md-3">
+					<i class="fa fa-shopping-cart"></i>
+					<h1>销售咨询</h1>
+					<p>销售经理为您解答 报价、部署实施方案的各种问题。</p>
+					<em>+86 10 64776698</em>
+				</li>
+				<li class="col-md-3">
+					<i class="fa fa-cogs"></i>
+					<h1>技术咨询</h1>
+					<p>遇到任何技术问题，请直接电话获得技术支持。也可发送邮件与我们联系。</p>
+					<em>+86 10 64776698<br>
+						<a href="mailto:info@shurenyun.com">info@shurenyun.com</a>
+					</em>
+				</li>
+				<li class="col-md-3">
+					<i class="fa fa-comments-o"></i>
+					<h1>博客 | 社区</h1>
+					<p>关注 数人云 最新技术和开发进展，请访问「数人技术博客」。</p>
+					<em><a href="http://blog.dataman-inc.com/" target="_blank">前往博客</a> | <a href="http://open.shurenyun.com/" target="_blank">前往社区</a></em>
+				</li>
+			</ul>
+			<div class="row footer-aboutus">
+				<div class="col-md-10">
+					<ul class="row">
+						<li class="col-md-2">
+							<h1>产品</h1>
+							<ul>
+								<li><a href="https://www.shurenyun.com/product">下一代 DCOS</a></li>
+								<li><a href="https://www.shurenyun.com/price">报价</a></li>
+								<li><a href="http://doc.shurenyun.com/" target="_blank">文档</a></li>
+								<li><a href="https://dataman.kf5.com/home" target="_blank">常见 FAQ</a></li>
+								<li><a href="https://www.shurenyun.com/service-item">服务条款</a></li>
+							</ul>
+						</li>
+						<li class="col-md-2">
+							<h1>解决方案</h1>
+							<ul>
+								<li><a href="https://www.shurenyun.com/scene-seckill">高并发 / 秒杀</a></li>
+								<li><a href="https://www.shurenyun.com/scene-containercloud">容器云</a></li>
+								<li><a href="https://www.shurenyun.com/scene-cicd">CI / CD</a></li>
+								<li><a href="https://www.shurenyun.com/scene-bigdata">大数据</a></li>
+								<li><a href="https://www.shurenyun.com/scene-companyapp/index">企业应用平台</a></li>
+							</ul>
+						</li>
+						<li class="col-md-2">
+							<h1>行业方案</h1>
+							<ul>
+								<li><a href="https://www.shurenyun.com/solution-finance">金融大数据</a></li>
+								<li><a href="https://www.shurenyun.com/solution-internet">互联网</a></li>
+								<li><a href="https://www.shurenyun.com/solution-bioinfo">生物信息</a></li>
+								<li><a href="https://www.shurenyun.com/solution-o2o">电商</a></li>
+								<li><a href="https://www.shurenyun.com/solution-operator">运营商</a></li>
+								<li><a href="https://www.shurenyun.com/solution-tradition">能源</a></li>
+							</ul>
+						</li>
+						<li class="col-md-2">
+							<h1>关于</h1>
+							<ul>
+								<li><a href="https://www.shurenyun.com/aboutus">公司</a></li>
+								<li><a href="https://www.shurenyun.com/aboutus#partner">合作伙伴</a></li>
+								<li><a href="http://www.lagou.com/gongsi/j37868.html" target="_blank">招聘</a></li>
+							</ul>
+						</li>
+						<li class="col-md-3">
+							<h1>联系我们</h1>
+							<ul>
+								<li>电话: +86 10 64776698</li>
+								<li>邮箱:  <a href="mailto:info@dataman-inc.com">info@dataman-inc.com</a></li>
+								<li>地址: 北京市朝阳区大望京商务园区宏泰东街浦项中心A座806-807</li>
+								<li>邮编: 100102</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<ul class="row">
 
-    <div class="bg-black-box">
-        <div class="container">
-            <section class="feature">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="feature-text">
-                            <h1>基于Mesos的最成熟Docker生产环境</h1>
-                            <h4>Mesos is the "gold standard" for large-scale production clusters running containers.</h4>
-                            <h6>——Solomon Hykes, Docker CTO</h6>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2">
-                        <img src="images/ico-512-02.png" class="img-responsive" width="128">
-                        <h3>弹性的云生产环境</h3>
-                        <p>数人云操作系统可以管理任意规模的应用。不管是10还是10000台服务器，数人云都可以在整个集群轻松实现弹性扩展。从而轻松应对业务的爆发式增长。</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/ico-512-01.png" class="img-responsive" width="128">
-                        <h3>提升资源利用率</h3>
-                        <p>传统的数据中心或云的资源利用率只有12-15%。数人云可以将不同应用自动混合部署到整个集群，不受单个服务器边界限制，明显提升了资源利用率。平均可提升400%。</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/ico-512-03.png" class="img-responsive" width="128">
-                        <h3>高可用</h3>
-                        <p>当您开启高可用服务后，数人云会自动为宕机服务器上运行的节点重新分配资源，保障业务不掉线，高可靠运行。这也就意味着您不用再为一两台服务器的宕机，而经历一个不眠之夜。</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/ico-512-04.png" class="img-responsive" width="128">
-                        <h3>易部署</h3>
-                        <p>数人云使用Docker容器技术封装应用。通过将应用，依赖关系，配置信息打包在一起，Docker封装的应用拥有了极高的可移植性。这样就使得用户不需要重写代码，就可以在公有云，私有云或混合云上部署和管理应用。</p>
-                    </div>
-                    <div class="col-md-2">
-                        <img src="images/ico-512-05.png" class="img-responsive" width="128">
-                        <h3>易使用</h3>
-                        <p>数人云拥有极高的易用性。在此之前，管理分布式应用，或监控数十台，上千台服务器的运行情况是一件很困难的事情。数人云强大的命令行工具和控制面板，让这一切都变得容易起来。</p>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-            </section>
-        </div>
-    </div>
-    
-    <div>
-        <div class="container">
-            <section class="feature">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                       <div class="feature-text">
-                            <h1>企业级服务，助业务无忧增长</h1>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="row case-yours">
-                    <div class="col-md-3">
-                        <img src="images/ico-512-11.png" class="img-responsive" width="160">
-                           <h3>咨询培训</h3>
-                            <p>容器、微服务架构咨询<br>Docker、Mesos技术培训</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/ico-512-12.png" class="img-responsive" width="160">
-                           <h3>应用迁移</h3>
-                            <p>帮助企业迁移应用<br>轻松上云</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/ico-512-13.png" class="img-responsive" width="160">
-                           <h3>公有云集群管理</h3>
-                            <p>使用数人云管理平台<br>集中管理公有云集群</p>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/ico-512-14.png" class="img-responsive" width="160">
-                           <h3>私有云混合云搭建</h3>
-                            <p>使用数人云操作系统搭建私有云<br>混合云等专属云平台。</p>
-                    </div>
-                </div>
-                <div class="row">
-                   <div class="btn-distance">
-                    <div class="col-md-12">
-                        <a href="http://shurenyun.mikecrm.com/f.php?t=iHW5ve" class="btn btn-info btn-lg" id="dataman-inc-index-zixun">&nbsp;<span class="glyphicon glyphicon-hand-right"></span>&nbsp;立即免费咨询&nbsp;</a>
-                    </div>
-                </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    
-    <div class="bg-black-box">
-        <div class="container">
-            <section class="feature">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-10">
-                        <div class="feature-text">
-                            <h1>行业解决方案与案例</h1>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="row case-yours">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2">
-                        <a href="/case.html#case-1" id="click-case-1" target="_blank"><img src="images/ico-512-06.png" class="img-responsive" width="120">
-                            <h3>互联网社交应用</h3>
-                            <p>无论什么时候爆发<br>我们都做好了准备</p>
-                        </a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="/case.html#case-2" id="click-case-2" target="_blank"><img src="images/ico-512-07.png" class="img-responsive" width="120">
-                            <h3>电商及O2O"秒杀"</h3>
-                            <p>您负责专注业务<br>我来搞定"秒杀"后台</p>
-                        </a>
-
-                    </div>
-                    <div class="col-md-2">
-                        <a href="/case.html#case-3" id="click-case-3" target="_blank"><img src="images/ico-512-08.png" class="img-responsive" width="120">
-                            <h3>金融大数据</h3>
-                            <p>轻松应对海量数据的<br>收集、处理、分析</p>
-                        </a>
-
-                    </div>
-                    <div class="col-md-2">
-                        <a href="/case.html#case-4" id="click-case-4" target="_blank"><img src="images/ico-512-09.png" class="img-responsive" width="120">
-                            <h3>教育行业</h3>
-                            <p>最便捷的<br>IT教学环境</p>
-                        </a>
-
-                    </div>
-                    <div class="col-md-2">
-                        <a href="/case.html#case-5" id="click-case-5" target="_blank"><img src="images/ico-512-10.png" class="img-responsive" width="120">
-                            <h3>生物信息行业</h3>
-                            <p>灵活调整业务<br>充分利用资源</p>
-                        </a>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-                <div class="row about-other">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2">
-                        <a href="/case.html#case-1" target="_blank" class="btn btn-primary">了解更多 &gt;&gt; </a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="/case.html#case-2" target="_blank" class="btn btn-info">了解更多 &gt;&gt; </a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="/case.html#case-3" target="_blank" class="btn btn-primary">了解更多 &gt;&gt; </a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="/case.html#case-4" target="_blank" class="btn btn-info">了解更多 &gt;&gt; </a>
-                    </div>
-                    <div class="col-md-2">
-                        <a href="/case.html#case-5" target="_blank" class="btn btn-primary">了解更多 &gt;&gt; </a>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
-            </section>
-        </div>
-    </div>
-    
-    <div class="container">
-        <section class="member">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>From Google, Beyond Google.</h2>
-                    <p>我们善于用国际先进的技术架构分布式操作系统，管理数以万计服务器节点。
-                        <br> 通过提供可靠的分布式操作系统，我们可以妥善的帮助拥有后台压力的公司轻松解决问题，
-                        <br> 并长期保持后台系统的强大和可靠。
-                    </p>
-                </div>
-                <div class="col-md-12 member-list">
-                    <a href="#" class="ceo"><img src="images/member-wangpu.png" class="img-circle img-responsive"></a>
-                </div>
-                <div class="col-md-12 member-list">
-                    <a href="#"><img src="images/member-chenfu.png" class="img-circle img-responsive"></a> >
-                    <a href="#"><img src="images/member-mayue.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-xinwen.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-sungang.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-yanjingjing.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-zhenzizhuang.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-guoyiqin.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-zhouweitao.png" class="img-circle img-responsive"></a>
-                </div>
-                <div class="col-md-12 member-list">
-                    <a href="#"><img src="images/member-guoqing.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-linan.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-xiaodeshi.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-xielebing.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-guoyiqin.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-miaoyu.png" class="img-circle img-responsive"></a>
-                    <a href="#"><img src="images/member-huangfan.png" class="img-circle img-responsive"></a>
-                </div>
-                <a href="contact.html" class="btn btn-primary btn-large">了解数人科技</a> </div>
-        </section>
-    </div>
-    <footer class="sr-footer">
-        <div class="container">
-            <div class="row">
-                <p>
-                    <a href="http://weibo.com/p/1006065558261798/home?from=page_100606&mod=TAB#place" title="关注微博" target="_blank"><img src="images/logo-weibo.svg" width="32"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a tabindex="0" role="button" data-toggle="popover" title="关注微信" data-placement="top" data-trigger="focus" data-content="<img src='images/code-weixin.jpg'>" data-html="true" id="follow-weixin"><img src="images/logo-weixin.svg" width="32"></a>
-                </p>
-                <p>Copyright©2015 北京数人科技有限公司（dataman-inc.com） 京ICP备14058899号-1</p>
-                <p>+86 10 64776698 info@dataman-inc.com 北京市朝阳区大望京商务园区宏泰东街浦项中心A座806-807 100102</p>
-                <p><a href="product.html">产品</a> - <a href="case.html">案例</a> - <a href="http://blog.dataman-inc.com/">博客</a> - <a href="http://www.dataman.io" target="_blank">Saas</a> - <a href="contact.html">简介</a> - <a href="contact.html">团队</a> - <a href="contact.html">联系</a> - <a href="http://support.dataman-inc.com/request/guest/" target="_blank">反馈</a></p>
-                <a href="index.html"><img src="images/logo-115-24.png"></a>
-            </div>
-        </div>
-    </footer>
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $('#follow-weixin').popover();
-    </script>
-    <!-- 百度统计 -->
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "//hm.baidu.com/hm.js?64b446a7f17856a69b50d20ca42de802";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
-    </script>
-
+						<li class="col-md-12">
+							<div class="social-network">
+								<!-- <a href="https://www.shurenyun.com/"><i class="fa fa-weixin"></i></a> -->
+								<a href="http://weibo.com/dataman2014" target="_blank"><i class="fa fa-weibo"></i></a>
+							</div>
+							<p>关注 数人云<br>获取最新行业资讯</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copyright">Copyright © 2015 - 2016 北京数人科技有限公司（dataman-inc.com） 京ICP备14058899号-1 版本号：v0.1.012502</div>
+		</div>
+	</footer>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js-shurenyun/jquery-1.11.2.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js-shurenyun/bootstrap.min.js"></script>
 </body>
-
 </html>
